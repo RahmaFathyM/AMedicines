@@ -26,7 +26,7 @@ public class disks1 extends Fragment {
        View view=inflater.inflate(R.layout.disks,container,false);
         RecyclerView recyclerView1 =view.findViewById(R.id.drec);
         ArrayList <item> arrayList1=new ArrayList<>();
-        arrayList1.add(new item(R.drawable.ic_launcher_foreground,"Medicine name"));
+        arrayList1.add(new item(R.drawable.ic_launcher_background,"Medicine name"));
         arrayList1.add(new item(R.drawable.ic_launcher_foreground,"jgvfv"));
         arrayList1.add(new item(R.drawable.ic_launcher_foreground,"jgvfv"));
         arrayList1.add(new item(R.drawable.ic_launcher_foreground,"jgvfv"));
