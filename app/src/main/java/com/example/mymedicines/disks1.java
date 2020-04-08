@@ -29,7 +29,7 @@ public class disks1 extends Fragment {
         arrayList1.add(new item(R.drawable.ic_launcher_background,"Medicine name"));
         arrayList1.add(new item(R.drawable.ic_launcher_background,"jgvfv"));
         arrayList1.add(new item(R.drawable.ic_launcher_background,"jgvfv"));
-        arrayList1.add(new item(R.drawable.ic_launcher_foreground,"jgvfv"));
+        arrayList1.add(new item(R.drawable.ic_launcher_background,"jgvfv"));
         DisksAdapter disksAdapter=new DisksAdapter(arrayList1);
         recyclerView1.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView1.setHasFixedSize(true);
