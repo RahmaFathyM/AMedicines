@@ -10,6 +10,8 @@ import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
@@ -22,6 +24,17 @@ public class disks1 extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
        View view=inflater.inflate(R.layout.disks,container,false);
-        return  view;
+        RecyclerView recyclerView1 =view.findViewById(R.id.drec);
+        ArrayList <item> arrayList1=new ArrayList<>();
+        arrayList1.add(new item(R.drawable.ic_launcher_foreground,"Medicine name"));
+        arrayList1.add(new item(R.drawable.ic_launcher_foreground,"jgvfv"));
+        arrayList1.add(new item(R.drawable.ic_launcher_foreground,"jgvfv"));
+        arrayList1.add(new item(R.drawable.ic_launcher_foreground,"jgvfv"));
+        DisksAdapter disksAdapter=new DisksAdapter(arrayList1);
+        recyclerView1.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView1.setHasFixedSize(true);
+        recyclerView1.setAdapter(disksAdapter);
+        return view;
+
     }
 }

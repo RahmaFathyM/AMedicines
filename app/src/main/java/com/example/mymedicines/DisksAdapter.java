@@ -28,8 +28,8 @@ public class DisksAdapter extends RecyclerView.Adapter<DisksAdapter.DisksHolder>
     @Override
     public void onBindViewHolder(@NonNull DisksHolder holder, int position) {
    item disks=obj1.get(position);
-holder.dtextView.setText(disks.getName_item());
-holder.dimageView.setImageResource(disks.getImg_item());
+holder.dtext.setText(disks.getName_item());
+holder.dimage.setImageResource(disks.getImg_item());
     }
 
     @Override
@@ -38,12 +38,12 @@ holder.dimageView.setImageResource(disks.getImg_item());
     }
 
     public class DisksHolder extends RecyclerView.ViewHolder{
-TextView dtextView;
-ImageView dimageView;
+TextView dtext;
+ImageView dimage;
         public DisksHolder(@NonNull View itemView) {
             super(itemView);
-            dtextView=itemView.findViewById(R.id.disktex);
-            dimageView=itemView.findViewById(R.id.diskima);
+            dtext=itemView.findViewById(R.id.disktex);
+            dimage=itemView.findViewById(R.id.diskima);
         }
     }
 

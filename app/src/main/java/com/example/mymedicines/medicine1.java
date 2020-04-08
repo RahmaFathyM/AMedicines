@@ -25,11 +25,10 @@ public class medicine1 extends Fragment {
      View  view=inflater.inflate(R.layout.medicine,container,false);
         RecyclerView recyclerView =view.findViewById(R.id.mrec);
         ArrayList <item> arrayList=new ArrayList<>();
+        arrayList.add(new item(R.drawable.ic_launcher_foreground,"Medicine name"));
         arrayList.add(new item(R.drawable.ic_launcher_foreground,"jgvfv"));
         arrayList.add(new item(R.drawable.ic_launcher_foreground,"jgvfv"));
         arrayList.add(new item(R.drawable.ic_launcher_foreground,"jgvfv"));
-        arrayList.add(new item(R.drawable.ic_launcher_foreground,"jgvfv"));
-
         MedicineAdapter medicineAdapter=new MedicineAdapter(arrayList);
        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
        recyclerView.setHasFixedSize(true);
